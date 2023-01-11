@@ -6,7 +6,7 @@
 /*   By: clora-ro <clora-ro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/28 10:09:02 by clora-ro          #+#    #+#             */
-/*   Updated: 2022/12/29 14:40:28 by clora-ro         ###   ########lyon.fr   */
+/*   Updated: 2022/12/30 15:52:59 by clora-ro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,8 @@ int	my_key_code(int keycode, t_vars *mlx)
 	// 	mlx->up = 2;
 	if (keycode == 1 && check_down(map) == 1)
 		mlx->down = 1;
-	if (keycode == 1 && check_down(map) == 2)
-		mlx->down = 2;
+	// if (keycode == 1 && check_down(map) == 2)
+	// 	mlx->down = 2;
 	// if (keycode == 0 && check_left(map) == 1)
 	// 	mlx->left = 1;
 	// if (keycode == 0 && check_left(map) == 2)
@@ -43,8 +43,9 @@ int	my_key_code(int keycode, t_vars *mlx)
 		mlx->rotate_left = 1;
 	if (keycode == 0)
 		mlx->rotate_right = 1;
-	// raycast(mlx, map);
+	build_map_other(mlx, map);
 	change_map(mlx, map);
+	print_player_x(mlx, map);
 	return (keycode);
 }
 

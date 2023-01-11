@@ -6,7 +6,7 @@
 #    By: clora-ro <clora-ro@student.42lyon.fr>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/12/16 11:20:22 by clora-ro          #+#    #+#              #
-#    Updated: 2022/12/29 13:10:43 by clora-ro         ###   ########lyon.fr    #
+#    Updated: 2023/01/04 15:13:59 by clora-ro         ###   ########lyon.fr    #
 #                                                                              #
 # **************************************************************************** #
 
@@ -45,7 +45,7 @@ minilibx	:
 			$(MAKE) -C minilibx
 
 $(NAME)		: $(addprefix objs/, $(OBJS)) libft/libft.a minilibx/libmlx.a
-			$(CC) $(CFLAGS) -o $(NAME) $^ -Lminilibx -lmlx -framework OpenGL -framework AppKit
+			$(CC) $(CFLAGS) -o $(NAME) $^ -Lminilibx -lmlx -lm -framework OpenGL -framework AppKit
 
 objs/%.o	:	%.c includes/get_next_line.h includes/cub3D.h libft/libft.h minilibx/mlx.h minilibx/mlx_int.h minilibx/mlx_new_window.h minilibx/mlx_opengl.h minilibx/mlx_png.h Makefile
 				@mkdir -p objs

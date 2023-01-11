@@ -2,4 +2,5 @@ remalloc map ?
 
 init pa selon depart N O ...
 
-gerer le deplacement, la case a recolorier
+1. mettre le joueur au milieu du pixel_player
+

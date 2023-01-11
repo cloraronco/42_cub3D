@@ -6,7 +6,7 @@
 /*   By: clora-ro <clora-ro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/07 16:35:11 by clora-ro          #+#    #+#             */
-/*   Updated: 2022/12/29 12:50:49 by clora-ro         ###   ########lyon.fr   */
+/*   Updated: 2023/01/03 16:31:31 by clora-ro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,13 @@ void	change_map(t_vars *mlx, t_map *map)
 		rotate_left(map, mlx);
 	if (mlx->rotate_right == 1)
 		rotate_right(map, mlx);
+	raycast(mlx, map);
+	// draw_line(mlx->mlx, mlx->win,
+	// 	(size_mini * (map->pos_y)) + map->pix_y,
+	// 	(size_mini * (map->pos_x)) + map->pix_x,
+	// 	(size_mini * (map->pos_y)) + map->pix_y - map->pdx - (map->pdy / map->pdx),
+	// 	(size_mini * (map->pos_x)) + map->pix_x - map->pdx - (map->pdx / map->pdy),
+	// 	0x0000FF00);
 }
 
 

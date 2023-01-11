@@ -6,7 +6,7 @@
 /*   By: clora-ro <clora-ro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/21 16:55:00 by clora-ro          #+#    #+#             */
-/*   Updated: 2022/12/29 15:08:39 by clora-ro         ###   ########lyon.fr   */
+/*   Updated: 2023/01/03 14:08:38 by clora-ro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@
 # include "get_next_line.h"
 
 #define size_mini 40
-#define pixel_move 5
+#define pixel_move 1
 #define size_player 5
 #define PI 3.1415926535
 
@@ -84,9 +84,11 @@ void	init_map(char *av, t_map *map);
 
 // int		read_map(t_vars mlx, char c, int x, int y);
 // int		load_image(t_vars *mlx, t_vars lenght);
-void	print_player(t_vars mlx, int i, int j, int color);
-void	square(t_vars mlx, int i, int j, int color);
-void	build_map(t_vars *mlx, t_map *map, t_vars lenght);
+void	print_player_x(t_vars *mlx, t_map *map);
+void	print_player(t_vars *mlx, int i, int j, int color);
+void	square(t_vars *mlx, int i, int j, int color);
+void	build_map(t_vars *mlx, t_map *map);
+void	build_map_other(t_vars *mlx, t_map *map);
 // int		co_x(t_map *map);
 // int		co_y(t_map *map);
 
@@ -147,6 +149,7 @@ void	move_square_right(t_vars *mlx, t_map *map);
 void	rotate_left(t_map *map, t_vars *mlx);
 void	rotate_right(t_map *map, t_vars *mlx);
 
+int 	draw_line(void *mlx, void *win, int beginX, int beginY, int endX, int endY, int color);
 void	raycast(t_vars *mlx, t_map *map);
 
 // int		ft_close_error1(t_vars *mlx);
