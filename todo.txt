@@ -1,6 +1,0 @@
-remalloc map ?
-
-init pa selon depart N O ...
-
-1. mettre le joueur au milieu du pixel_player
-
