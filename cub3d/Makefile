@@ -20,7 +20,7 @@ HEADER	= 	include/cub3d.h		\
 			mlx/mlx_opengl.h		\
 			mlx/mlx_png.h			\
 			libft2/include/gc.h		\
-			libft2/include/libft.h	\
+			libft2/include/libft.h
 
 LIBFT	= libft2/libft2.a
 MLX		= mlx/libmlx.a
@@ -44,7 +44,7 @@ ${LIBFT}: FORCE
 ${MLX}: FORCE
 	make	-C mlx
 
-${NAME}: ${OBJS} 
+${NAME}: ${OBJS} libft2/libft2.a mlx/libmlx.a
 		${CC} ${CFLAGS} ${OBJS} ${LIBFLAGS} ${INCLUDES} $(MLX) ${LIBFT} -o $@ 
 
 %.o : %.c	${HEADER} ${LIBFT} ${MLX} Makefile
