@@ -3,7 +3,7 @@ This project is inspired by the world-famous Wolfenstein 3D game, which was the 
 It will enable you to explore ray-casting.
 Your goal will be to make a dynamic view inside a maze, in which you’ll have to find your way.
 
-![](https://github.com/cloraronco/42_cub3D/blob/master/cub3D_demoV1_GIF.gif)
+![](https://github.com/cloraronco/42_cub3D/blob/master/cub3d_demoV1_GIF.gif)
 
 ***
 ## Table of Contents
@@ -11,7 +11,7 @@ Your goal will be to make a dynamic view inside a maze, in which you’ll have t
 2. [Play](#play)
 ***
 ## Installation
-![](https://github.com/cloraronco/42_cub3D/blob/master/cub3D_installationV1_GIF.gif)
+![](https://github.com/cloraronco/42_cub3D/blob/master/cub3d_installationV1_GIF.gif)
 ```
 $ git clone https://github.com/cloraronco/42_cub3D
 $ cd 42_cub3D/
