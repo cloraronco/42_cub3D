@@ -21,7 +21,7 @@ $ ./cub3d map/map.ber
 ```
 ***
 ## Play
-To move, press the keys W, A, S, D.  
+To move on the map, press the keys W, A, S, D.  
 To move the cursor, press the arrow keys.  
   
 It's your turn!  
