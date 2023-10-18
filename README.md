@@ -17,7 +17,7 @@ $ git clone https://github.com/cloraronco/42_cub3D
 $ cd 42_cub3D/
 $ cd cub3d/
 $ make
-$ ./cub3d map/map.ber
+$ ./cub3d map.cub
 ```
 ***
 ## Play
